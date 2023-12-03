@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Portifólio Pessoal</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to right, #8A2BE2, #1E90FF);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+.carousel{
+    flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+
+    header {
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: justify;
+    }
+
+    #links-container {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+            margin: auto;
+        }
+
+        a {
+            display: block;
+            padding: 10px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+        }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Gabriel Teodoro Gonçalves Rosa</h1>
+  </header>
+
+  <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js" crossorigin="anonymous"></script>
+  <script type="importmap">
+  {
+    "imports": {
+      "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.min.js",
+      "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.esm.min.js"
+    }
+  }
+  </script>
+  <script type="module">
+    import * as bootstrap from 'bootstrap'
+
+    new bootstrap.Popover(document.getElementById('popoverButton'))
+  </script>
+
+
+
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="fotos/foto1.jpeg" class="d-block w-100" alt="foto1">
+      </div>
+      <div class="carousel-item">
+        <img src="fotos/foto2.jpeg" class="d-block w-100" alt="foto2">
+      </div>
+      <div class="carousel-item">
+        <img src="fotos/foto3.jpeg" class="d-block w-100" alt="foto3">
+      </div>
+      <div class="carousel-item">
+        <img src="fotos/foto4.jpeg" class="d-block w-100" alt="foto4">
+      </div>
+      <div class="carousel-item">
+        <img src="fotos/foto5.jpeg" class="d-block w-100" alt="foto5">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<section>
+    <h2>Sobre Mim</h2>
+    <p>Meu nome é Gabriel Teodoro, também chamado de Theo, sou de são paulo, tenho 18 anos, estou concluindo o terceiro ano do ensino médio técnico em T.I.</p>
+</section>
+
+  
+<section>
+        <h2>Interesses</h2>
+        <p>Gosto de jogar, o meu jogo favorito é valorant.</p>
+        <p>Gosto de esportes principalmente volêi e basquete.</p>
+        <p>Gosto de ouvir música, sou bem eclético mas meus artistas favoritas são de rock ou trap, como Arctic Monkeys ou Ryu,the runner, respectivamente.</p>
+        <p>Tenho vontade de seguir na área de T.I mas também tenho bastente interesse em produção e design digital.</p>
+</section>
+  <section>
+    <div id="links-container">
+        <a type="button" class="btn btn-outline-info" href="file:///C:/Users/gteod/OneDrive/%C3%81rea%20de%20Trabalho/portifolio/pagina_principal.html">VOLTAR</a>
+    </div>
+</section>
+
+</body>
+</html>
